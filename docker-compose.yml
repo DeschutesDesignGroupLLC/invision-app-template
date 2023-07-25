@@ -6,18 +6,7 @@ services:
       - '80:80'
     volumes:
       - './invision:/var/www/html'
-#      - './src/api/:/var/www/html/applications/yourappkey/api'
-#      - './src/data/:/var/www/html/applications/yourappkey/data'
-#      - './src/dev/:/var/www/html/applications/yourappkey/dev'
-#      - './src/extensions/:/var/www/html/applications/yourappkey/extensions'
-#      - './src/hooks/:/var/www/html/applications/yourappkey/hooks'
-#      - './src/interface/:/var/www/html/applications/yourappkey/interface'
-#      - './src/modules/:/var/www/html/applications/yourappkey/modules'
-#      - './src/setup/:/var/www/html/applications/yourappkey/setup'
-#      - './src/sources:/var/www/html/applications/yourappkey/sources'
-#      - './src/tasks/:/var/www/html/applications/yourappkey/tasks'
-#      - './src/widgets/:/var/www/html/applications/yourappkey/widgets'
-#      - './src/Application.php:/var/www/html/applications/yourappkey/Application.php'
+#      - './src:/var/www/html/applications/yourappkey'
       - './nginx/conf.d/site.conf:/etc/nginx/conf.d/site.conf'
     networks:
       - invision
@@ -33,18 +22,7 @@ services:
     image: invision-8.0/app
     volumes:
       - './invision:/var/www/html'
-#      - './src/api/:/var/www/html/applications/yourappkey/api'
-#      - './src/data/:/var/www/html/applications/yourappkey/data'
-#      - './src/dev/:/var/www/html/applications/yourappkey/dev'
-#      - './src/extensions/:/var/www/html/applications/yourappkey/extensions'
-#      - './src/hooks/:/var/www/html/applications/yourappkey/hooks'
-#      - './src/interface/:/var/www/html/applications/yourappkey/interface'
-#      - './src/modules/:/var/www/html/applications/yourappkey/modules'
-#      - './src/setup/:/var/www/html/applications/yourappkey/setup'
-#      - './src/sources:/var/www/html/applications/yourappkey/sources'
-#      - './src/tasks/:/var/www/html/applications/yourappkey/tasks'
-#      - './src/widgets/:/var/www/html/applications/yourappkey/widgets'
-#      - './src/Application.php:/var/www/html/applications/yourappkey/Application.php'
+#      - './src:/var/www/html/applications/yourappkey'
       - './php/conf.d/php.ini:/usr/local/etc/php/conf.d/100-custom.ini'
     extra_hosts:
       - 'host.docker.internal:host-gateway'

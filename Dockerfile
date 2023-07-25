@@ -14,4 +14,4 @@ RUN chmod +x /usr/local/bin/install-php-extensions && \
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
 # Include our own to modify the PHP config
-COPY php/php.ini "$PHP_INI_DIR/conf.d/99-perscom.ini"
+COPY php/php.ini "$PHP_INI_DIR/conf.d/99-custom.ini"
